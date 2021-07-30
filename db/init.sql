@@ -2,7 +2,7 @@ CREATE DATABASE gradesData;
 use gradesData;
 
 CREATE TABLE IF NOT EXISTS tblGradesImport (
-    `LastName` VARCHAR(9) CHARACTER SET utf8,
+    `LastName` VARCHAR(12) CHARACTER SET utf8,
     `FirstName` VARCHAR(16) CHARACTER SET utf8,
     `Ssn` VARCHAR(21) CHARACTER SET utf8,
     `Test1` INT,
