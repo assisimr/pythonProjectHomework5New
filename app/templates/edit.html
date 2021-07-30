@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{grades.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="fldLastName">Grades LastName</label>
+            <input id="fldLastName" type="text" class="form-control" placeholder="Grades LastName" name="fldLastName" value="{{grades.fldLastName}}">
+        </div>
+        <div class="col">
+            <label for="fldFirstName">Grades FirstName</label>
+            <input id="fldFirstName" type="text" class="form-control" placeholder="Grades FirstName"
+                   name="fldFirstName" value="{{grades.fldFirstName}}">
+        </div>
+        <div class="col">
+            <label for="fldSsn">Grades Ssn</label>
+            <input id="fldSsn" type="text" class="form-control" placeholder="Grades Ssn" name="fldSsn" value="{{grades.fldSsn}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="fldTest1">Grades Test1</label>
+            <input id="fldTest1" type="text" class="form-control" placeholder="Grades Test1" name="fldTest1" value="{{grades.fldTest1}}">
+        </div>
+        <div class="col">
+            <label for="fldTest2">Grades Test2</label>
+            <input id="fldTest2" type="text" class="form-control" placeholder="Grades Test2" name="fldTest2" value="{{grades.fldTest2}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="fldTest3">Grades Test3</label>
+
+            <input id="fldTest3" type="text" class="form-control" placeholder="Test3"
+                   name="fldTest3" value="{{grades.fldTest3}}">
+        </div>
+        <div class="col">
+            <label for="fldFinal">Grades Final</label>
+            <input id="fldFinal" type="text" class="form-control" placeholder="Final" name="fldFinal" value="{{grades.fldFinal}}">
+        </div>
+        <div class="col">
+            <label for="fldGrade">Grades Grade</label>
+            <input id="fldGrade" type="text" class="form-control" placeholder="Grade" name="fldGrade" value="{{grades.fldGrade}}">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}

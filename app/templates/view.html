@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-6 p-2">
+    <h6 class="card-title">{{ grades.fldLastName }} - {{ grades.fldGrade }}</h6>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ grades.fldFirstLat }}</li>
+        <li class="list-group-item">{{ grades.fldSsn }}</li>
+        <li class="list-group-item">{{ grades.fldTest1 }}</li>
+        <li class="list-group-item">{{ grades.fldTest2 }}</li>
+        <li class="list-group-item">{{ grades.fldTest3 }}</li>
+        <li class="list-group-item">{{ grades.fldFinal }}</li>
+    </ul>
+    <div class="card-body">
+        <a href="/edit/{{grades.id}}" class="card-link btn btn-primary">edit</a>
+    </div>
+</div>
+<form action="/delete/{{grades.id}}" method="post"><button type="submit" class="btn btn-danger">Save</button></form>
+
+
+{% endblock %}
