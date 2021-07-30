@@ -17,13 +17,13 @@
     {% for grade in grades %}
     <tr>
         <td><a href="view/{{grades.id}}">{{ grades.fldLastName }}</a></td>
-        <td>{{ city.fldFirstName }}</td>
-        <td>{{ city.fldSsn }}</td>
-        <td>{{ city.fldTest1 }}</td>
-        <td>{{ city.fldTest2 }}</td>
-        <td>{{ city.fldTest3 }}</td>
-        <td>{{ city.fldFinal }}</td>
-        <td>{{ city.fldGrade }}</td>
+        <td>{{ grades.fldFirstName }}</td>
+        <td>{{ grades.fldSsn }}</td>
+        <td>{{ grades.fldTest1 }}</td>
+        <td>{{ grades.fldTest2 }}</td>
+        <td>{{ grades.fldTest3 }}</td>
+        <td>{{ grades.fldFinal }}</td>
+        <td>{{ grades.fldGrade }}</td>
     </tr>
     {% endfor %}
     </tbody>
